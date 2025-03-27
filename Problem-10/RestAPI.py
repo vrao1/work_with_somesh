@@ -19,7 +19,7 @@ def predict():
         # 3. Return the prediction in JSON format
         return jsonify({'prediction': predicted_result})
     catch():
-        return ValueError
+        return Exception
 
 # For Parsing input json and return in model input format
 def parse_input(payload):
