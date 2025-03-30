@@ -1,0 +1,28 @@
+apiVersion: apps/v.1
+kind: Deployment
+metadata:
+  name: AI-Service-deployment
+  labels:
+    app: aiapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: aiapp
+  template:
+    metadata:
+      labels:
+        app: aiapp
+      spec:
+        containers:
+        - name: aiapp
+          image: vinodrao/ai_inference-app:v1.0
+          ports:
+          - containerPort: 30000
+          resources:
+            limits:
+              memory: "1024Mi"
+              cpu:  "500m"
+            requests:
+              memory: "256Mi"
+              cpu: "200m"
