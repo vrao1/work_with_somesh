@@ -1,0 +1,41 @@
+You are a mechanical engineer in a multi-national company. Your boss has given a project to design a base plate with a list of requirements.
+You are given a task to design a base plate according to the following requirements under the headings and subheadings 
+underneath them starting from the token ```START``` and ends with the token ```END```. Please answer questions listed between tokens ```BEGIN``` and ```CLOSE``` followed by the requirements. If you are not confident enough to answer then you 
+must not provide the answer, otherwise please provide anwers specific and concise manner according to the queries. If you want to assume any parameter which
+might be missing here, you may assume accordingly. Please make output in HTML format with headers and subheaders with bullet points.
+
+START
+
+1. Load Capacity
+	a. Primary Vertical Load: 3,000 N (≈ 300 kg mass-equivalent)
+	b. Lateral (Horizontal) Load: 300 N (to simulate minor side loads/wind or a person leaning).
+	c. The baseplate must safely carry these loads concurrently with Factor of Safety (FOS) ≥ 2.
+2. Dimensions & Mounting
+	a. Maximum Plate Footprint: 200 mm × 200 mm (students can design a shape within this envelope—square, rectangular, circular, etc.).
+	b. Plate Thickness: Up to 10 mm max (to control weight and material usage).
+	c. The baseplate must have four (4) mounting holes to accommodate M10 bolts (or equivalent fasteners).
+	d. Mounting hole pattern (i.e., center-to-center spacing) should fit within the 200×200 mm footprint and be arranged to ensure stability.
+3. Deflection Constraint
+	a. Under the maximum expected load (vertical + lateral), the top surface of the baseplate should not deflect more than 0.5 mm at the center or post location.
+4. Weight & Cost
+	a. The baseplate should weigh no more than 3 kg to simplify handling.
+	b. Aim for an estimated material cost ≤ $20 in moderate production volumes.
+
+END
+
+BEGIN
+
+	1. Can you please list out gaps in these requirements to design the base plate?
+	2. Please output the concept design in the JPEG image format.
+	3. What is the design plan of it?
+	4. Can you please write models using CAD & FEA and write program in C++ language that can run on computer successfully?
+	5. Can you please recommend material needed to design this baseplate?
+	6. Can you provide structural analysis of it?
+	7. Can you provide safety and failure analysis?
+	8. Please recommend relevant applicable standards.
+	9. Please provide comprehensive detail design report in the format of research publication paper.
+	10. Can you please provide a 2-dimensional drawing image in JPEG format of the design?
+
+CLOSE
+
+Thank You!
